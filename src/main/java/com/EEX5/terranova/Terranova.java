@@ -41,7 +41,7 @@ public class Terranova
     public void onServerStarting(ServerStartingEvent event) {
 
     }
-
+//hi
     @Mod.EventBusSubscriber(modid = MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
     public static class ClientModEvents {
         @SubscribeEvent
