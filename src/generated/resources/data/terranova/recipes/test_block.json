@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "terranova:test_block"
+    },
+    "B": {
+      "item": "terranova:termite"
+    }
+  },
+  "pattern": [
+    "AAA",
+    "ABA",
+    "AAA"
+  ],
+  "result": {
+    "item": "terranova:test_block"
+  },
+  "show_notification": true
+}

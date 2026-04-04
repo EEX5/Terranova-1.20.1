@@ -13,7 +13,7 @@ import net.minecraftforge.registries.RegistryObject;
 public class ModItemModelProvider extends ItemModelProvider {
     public ModItemModelProvider(PackOutput output, ExistingFileHelper existingFileHelper) {
         super(output, Terranova.MOD_ID, existingFileHelper);
-    };
+    }
 
     @Override
     protected void registerModels() {
@@ -53,7 +53,7 @@ public class ModItemModelProvider extends ItemModelProvider {
     }
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {
         return withExistingParent(item.getId().getPath(),
-                new ResourceLocation("item/generated")).texture("layer0",
-                new ResourceLocation(Terranova.MOD_ID, "item/" + item.getId().getPath()));
+                ResourceLocation.fromNamespaceAndPath(Terranova.MOD_ID, "item/generated")).texture("layer0",
+                ResourceLocation.fromNamespaceAndPath(Terranova.MOD_ID, "item/" + item.getId().getPath()));
     }
 }

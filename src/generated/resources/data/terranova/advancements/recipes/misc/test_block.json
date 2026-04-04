@@ -1,0 +1,48 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_termite": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "terranova:termite"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_test_block": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "terranova:test_block"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "terranova:test_block"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_test_block",
+      "has_termite",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "terranova:test_block"
+    ]
+  },
+  "sends_telemetry_event": false
+}
