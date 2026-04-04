@@ -1,7 +1,11 @@
 package com.EEX5.terranova;
 
+import com.EEX5.terranova.block.ModBlocks;
+import com.EEX5.terranova.item.ModCreativeModeTabs;
+import com.EEX5.terranova.item.ModItems;
 import com.mojang.logging.LogUtils;
 import net.minecraft.client.Minecraft;
+import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -23,6 +27,11 @@ public class Terranova
     public Terranova(FMLJavaModLoadingContext context) {
         IEventBus modEventBus = context.getModEventBus();
 
+        ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
+
+        ModCreativeModeTabs.register(modEventBus);
+
         modEventBus.addListener(this::commonSetup);
 
         MinecraftForge.EVENT_BUS.register(this);
@@ -34,7 +43,12 @@ public class Terranova
     }
 
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
-
+        /*
+        if(event.getTabKey() == CreativeModeTabs.EXAMPLE_VANILLA_TAB_NAME) {
+            event.accept(ModItems.EXAMPLE_ITEM);
+            event.accept(ModItems.EXAMPLE_ITEM2);
+        }
+        */
     }
 
     @SubscribeEvent
