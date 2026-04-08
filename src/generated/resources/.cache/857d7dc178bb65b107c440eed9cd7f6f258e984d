@@ -1,0 +1,6 @@
+// 1.20.1	2026-04-08T18:52:21.554962	Tags for minecraft:block mod id terranova
+215ca42fbabc241dfa316aa40c0d4a88f6f1a534 data/minecraft/tags/blocks/fences.json
+ac2e27d603a4c75cec21b219f489c5733fdc5c45 data/minecraft/tags/blocks/fence_gates.json
+9238366628909a3c5a8d6143a3e114b1160c996f data/minecraft/tags/blocks/needs_diamond_tool.json
+39eb22353c665a4cf62efa37946fe2221e11c7a1 data/minecraft/tags/blocks/walls.json
+9238366628909a3c5a8d6143a3e114b1160c996f data/terranova/tags/blocks/infestable.json

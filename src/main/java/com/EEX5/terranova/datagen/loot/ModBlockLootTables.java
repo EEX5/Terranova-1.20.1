@@ -18,16 +18,13 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.TEST_BLOCK.get());
 
         this.dropSelf(ModBlocks.TEST_STAIRS.get());
-        this.dropSelf(ModBlocks.TEST_WALL.get());
         this.dropSelf(ModBlocks.TEST_FENCE.get());
         this.dropSelf(ModBlocks.TEST_FENCE_GATE.get());
         this.dropSelf(ModBlocks.TEST_WALL.get());
         this.dropSelf(ModBlocks.TEST_TRAP_DOOR.get());
         this.dropSelf(ModBlocks.TEST_BARS.get());
-        this.dropSelf(ModBlocks.TEST_SLAB.get());
         this.dropSelf(ModBlocks.TEST_BUTTON.get());
         this.dropSelf(ModBlocks.TEST_PRESSURE_PLATE.get());
-
 
         this.add(ModBlocks.TEST_SLAB.get(),
                 block -> createSlabItemTable(ModBlocks.TEST_SLAB.get()));
@@ -35,6 +32,15 @@ public class ModBlockLootTables extends BlockLootSubProvider {
                 block -> createDoorTable(ModBlocks.TEST_DOOR.get()));
 
         //Oak
+        this.dropSelf(ModBlocks.OAK_TRUNK.get());
+        this.dropSelf(ModBlocks.TALL_OAK_BRANCH.get());
+        this.dropSelf(ModBlocks.MEDIUM_OAK_BRANCH.get());
+        this.dropSelf(ModBlocks.THICK_TALL_OAK_BRANCH.get());
+        this.dropSelf(ModBlocks.OAK_BRANCH.get());
+        this.dropSelf(ModBlocks.THIN_TALL_OAK_BRANCH.get());
+
+        this.add(ModBlocks.WIDE_OAK_TRUNK.get(),
+                block -> createSlabItemTable(ModBlocks.WIDE_OAK_TRUNK.get()));
 
     }
 

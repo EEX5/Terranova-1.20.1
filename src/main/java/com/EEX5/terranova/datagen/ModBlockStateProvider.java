@@ -34,13 +34,13 @@ public class ModBlockStateProvider extends BlockStateProvider {
         pressurePlateBlock(((PressurePlateBlock) ModBlocks.TEST_PRESSURE_PLATE.get()), blockTexture(ModBlocks.TEST_BLOCK.get()));
 
         //oak
-        stairsBlock(((StairBlock) ModBlocks.OAK_TRUNK.get()), blockTexture(Blocks.OAK_WOOD));
-        slabBlock(((SlabBlock) ModBlocks.WIDE_OAK_TRUNK.get()), blockTexture(Blocks.OAK_WOOD), blockTexture(Blocks.OAK_WOOD));
-        wallBlock(((WallBlock) ModBlocks.THICK_TALL_OAK_BRANCH.get()), blockTexture(Blocks.OAK_WOOD));
-        fenceBlock(((FenceBlock) ModBlocks.TALL_OAK_BRANCH.get()), blockTexture(Blocks.OAK_WOOD));
-        fenceGateBlock(((FenceGateBlock) ModBlocks.MEDIUM_OAK_BRANCH.get()), blockTexture(Blocks.OAK_WOOD));
-        trapdoorBlockWithRenderType(((TrapDoorBlock) ModBlocks.OAK_BRANCH.get()), modLoc("block/test_trapdoor"), true, "cutout");
-        paneBlock(((IronBarsBlock) ModBlocks.THIN_TALL_OAK_BRANCH.get()), blockTexture(Blocks.OAK_WOOD), blockTexture(Blocks.OAK_WOOD));
+        stairsBlock(((StairBlock) ModBlocks.OAK_TRUNK.get()), blockTexture(Blocks.OAK_LOG));
+        slabBlock(((SlabBlock) ModBlocks.WIDE_OAK_TRUNK.get()), blockTexture(Blocks.OAK_LOG), blockTexture(Blocks.OAK_LOG));
+        wallBlock(((WallBlock) ModBlocks.THICK_TALL_OAK_BRANCH.get()), blockTexture(Blocks.OAK_LOG));
+        fenceBlock(((FenceBlock) ModBlocks.TALL_OAK_BRANCH.get()), blockTexture(Blocks.OAK_LOG));
+        fenceGateBlock(((FenceGateBlock) ModBlocks.MEDIUM_OAK_BRANCH.get()), blockTexture(Blocks.OAK_LOG));
+        trapdoorBlockWithRenderType(((TrapDoorBlock) ModBlocks.OAK_BRANCH.get()), modLoc("block/oak_branch"), true, "cutout");
+        paneBlock(((IronBarsBlock) ModBlocks.THIN_TALL_OAK_BRANCH.get()), blockTexture(Blocks.OAK_LOG), blockTexture(Blocks.OAK_LOG));
     }
 
     private void blockWithItem(RegistryObject<Block> blockRegistryObject) {

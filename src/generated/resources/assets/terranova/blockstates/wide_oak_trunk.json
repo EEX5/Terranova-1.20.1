@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "terranova:block/wide_oak_trunk"
+    },
+    "type=double": {
+      "model": "minecraft:block/oak_log"
+    },
+    "type=top": {
+      "model": "terranova:block/wide_oak_trunk_top"
+    }
+  }
+}

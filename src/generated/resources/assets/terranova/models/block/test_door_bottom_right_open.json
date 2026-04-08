@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/door_bottom_right_open",
+  "render_type": "minecraft:cutout",
+  "textures": {
+    "bottom": "terranova:block/test_door_bottom",
+    "top": "terranova:block/test_door_top"
+  }
+}

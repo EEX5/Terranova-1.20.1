@@ -66,10 +66,28 @@ public class ModCreativeModeTabs {
                     })
                     .build());
     public static final RegistryObject<CreativeModeTab> WOOD_BLOCKS = CREATIVE_MODE_TABS.register("wood_blocks",
-            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.Termite.get()))
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModBlocks.OAK_TRUNK.get()))
                     .title(Component.translatable("creativetab.wood_blocks"))
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModBlocks.TEST_BLOCK.get());
+                        output.accept(ModBlocks.TEST_STAIRS.get());
+                        output.accept(ModBlocks.TEST_SLAB.get());
+                        output.accept(ModBlocks.TEST_WALL.get());
+                        output.accept(ModBlocks.TEST_FENCE.get());
+                        output.accept(ModBlocks.TEST_BARS.get());
+                        output.accept(ModBlocks.TEST_FENCE_GATE.get());
+                        output.accept(ModBlocks.TEST_BUTTON.get());
+                        output.accept(ModBlocks.TEST_PRESSURE_PLATE.get());
+                        output.accept(ModBlocks.TEST_TRAP_DOOR.get());
+                        output.accept(ModBlocks.TEST_DOOR.get());
+
+                        output.accept(ModBlocks.OAK_TRUNK.get());
+                        output.accept(ModBlocks.WIDE_OAK_TRUNK.get());
+                        output.accept(ModBlocks.THICK_TALL_OAK_BRANCH.get());
+                        output.accept(ModBlocks.TALL_OAK_BRANCH.get());
+                        output.accept(ModBlocks.THIN_TALL_OAK_BRANCH.get());
+                        output.accept(ModBlocks.MEDIUM_OAK_BRANCH.get());
+                        output.accept(ModBlocks.OAK_BRANCH.get());
                     })
                     .build());
 

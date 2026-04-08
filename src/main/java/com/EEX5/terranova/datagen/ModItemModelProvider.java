@@ -108,7 +108,7 @@ public class ModItemModelProvider extends ItemModelProvider {
 
     public void VfenceItem(RegistryObject<Block> block, Block baseBlock) {
         this.withExistingParent(ForgeRegistries.BLOCKS.getKey(block.get()).getPath(), mcLoc("block/fence_inventory"))
-                .texture("texture", ResourceLocation.fromNamespaceAndPath(Terranova.MOD_ID, "block/" + ForgeRegistries.BLOCKS.getKey(baseBlock).getPath()));
+                .texture("texture", ResourceLocation.fromNamespaceAndPath("minecraft", "block/" + ForgeRegistries.BLOCKS.getKey(baseBlock).getPath()));
     }
 
     public void buttonItem(RegistryObject<Block> block, RegistryObject<Block> baseBlock) {
@@ -123,7 +123,7 @@ public class ModItemModelProvider extends ItemModelProvider {
 
     public void VwallItem(RegistryObject<Block> block, Block baseBlock) {
         this.withExistingParent(ForgeRegistries.BLOCKS.getKey(block.get()).getPath(), mcLoc("block/wall_inventory"))
-                .texture("wall",  ResourceLocation.fromNamespaceAndPath(Terranova.MOD_ID, "block/" + ForgeRegistries.BLOCKS.getKey(baseBlock).getPath()));
+                .texture("wall",  ResourceLocation.fromNamespaceAndPath("minecraft", "block/" + ForgeRegistries.BLOCKS.getKey(baseBlock).getPath()));
     }
 
     private ItemModelBuilder simpleBlockItem(RegistryObject<Block> item) {
