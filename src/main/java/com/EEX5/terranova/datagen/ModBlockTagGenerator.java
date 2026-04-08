@@ -29,5 +29,24 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
 
         this.tag(BlockTags.NEEDS_DIAMOND_TOOL)
                 .add(ModBlocks.TEST_BLOCK.get());
+
+        //fences
+        this.tag(BlockTags.FENCES)
+                .add(ModBlocks.TEST_FENCE.get());
+        this.tag(BlockTags.FENCES)
+                .add(ModBlocks.TALL_OAK_BRANCH.get());
+
+        //fence gates
+        this.tag(BlockTags.FENCE_GATES)
+                .add(ModBlocks.TEST_FENCE_GATE.get());
+        this.tag(BlockTags.FENCE_GATES)
+                .add(ModBlocks.MEDIUM_OAK_BRANCH.get());
+
+        //walls
+        this.tag(BlockTags.WALLS)
+                .add(ModBlocks.TEST_WALL.get());
+        this.tag(BlockTags.WALLS)
+                .add(ModBlocks.THICK_TALL_OAK_BRANCH.get());
+
     }
 }

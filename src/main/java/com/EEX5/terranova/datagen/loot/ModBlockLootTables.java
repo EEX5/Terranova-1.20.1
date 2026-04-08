@@ -16,7 +16,29 @@ public class ModBlockLootTables extends BlockLootSubProvider {
     @Override
     protected void generate() {
         this.dropSelf(ModBlocks.TEST_BLOCK.get());
+
+        this.dropSelf(ModBlocks.TEST_STAIRS.get());
+        this.dropSelf(ModBlocks.TEST_WALL.get());
+        this.dropSelf(ModBlocks.TEST_FENCE.get());
+        this.dropSelf(ModBlocks.TEST_FENCE_GATE.get());
+        this.dropSelf(ModBlocks.TEST_WALL.get());
+        this.dropSelf(ModBlocks.TEST_TRAP_DOOR.get());
+        this.dropSelf(ModBlocks.TEST_BARS.get());
+        this.dropSelf(ModBlocks.TEST_SLAB.get());
+        this.dropSelf(ModBlocks.TEST_BUTTON.get());
+        this.dropSelf(ModBlocks.TEST_PRESSURE_PLATE.get());
+
+
+        this.add(ModBlocks.TEST_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.TEST_SLAB.get()));
+        this.add(ModBlocks.TEST_DOOR.get(),
+                block -> createDoorTable(ModBlocks.TEST_DOOR.get()));
+
+        //Oak
+
     }
+
+
 
     @Override
     protected Iterable<Block> getKnownBlocks() {

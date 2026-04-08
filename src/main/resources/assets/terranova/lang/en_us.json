@@ -38,6 +38,16 @@
 
 
   "block.terranova.test_block": "A Test Block",
+  "block.terranova.test_stairs": "A Test Stair Block",
+  "block.terranova.test_slab": "A Test Slab",
+  "block.terranova.test_wall": "A Test Wall",
+  "block.terranova.test_fence": "A Test Fence",
+  "block.terranova.test_fence_gate": "A Test Fence Gate",
+  "block.terranova.test_trap_door": "A Test Trap Door",
+  "block.terranova.test_bars": "A Test Bar",
+  "block.terranova.test_door": "A Test Door",
+  "block.terranova.test_button": "A Test Button",
+  "block.terranova.test_pressure_plate": "A Test Pressure Plate",
 
   "creativetab.insects": "Insects",
   "creativetab.wood_blocks": "Wood Blocks"
