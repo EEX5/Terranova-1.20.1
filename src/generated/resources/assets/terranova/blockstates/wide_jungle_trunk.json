@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "terranova:block/wide_jungle_trunk"
+    },
+    "type=double": {
+      "model": "minecraft:block/jungle_log"
+    },
+    "type=top": {
+      "model": "terranova:block/wide_jungle_trunk_top"
+    }
+  }
+}

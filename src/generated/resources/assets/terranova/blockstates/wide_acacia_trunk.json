@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "terranova:block/wide_acacia_trunk"
+    },
+    "type=double": {
+      "model": "minecraft:block/acacia_log"
+    },
+    "type=top": {
+      "model": "terranova:block/wide_acacia_trunk_top"
+    }
+  }
+}

@@ -1,6 +1,13 @@
 {
   "values": [
     "terranova:test_fence",
-    "terranova:tall_oak_branch"
+    "terranova:tall_oak_branch",
+    "terranova:tall_birch_branch",
+    "terranova:tall_spruce_branch",
+    "terranova:tall_jungle_branch",
+    "terranova:tall_acacia_branch",
+    "terranova:tall_dark_oak_branch",
+    "terranova:tall_mangrove_branch",
+    "terranova:tall_cherry_branch"
   ]
 }

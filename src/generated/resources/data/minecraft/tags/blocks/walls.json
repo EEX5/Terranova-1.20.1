@@ -1,6 +1,13 @@
 {
   "values": [
     "terranova:test_wall",
-    "terranova:thick_tall_oak_branch"
+    "terranova:thick_tall_oak_branch",
+    "terranova:thick_tall_birch_branch",
+    "terranova:thick_tall_spruce_branch",
+    "terranova:thick_tall_jungle_branch",
+    "terranova:thick_tall_acacia_branch",
+    "terranova:thick_tall_dark_oak_branch",
+    "terranova:thick_tall_mangrove_branch",
+    "terranova:thick_tall_cherry_branch"
   ]
 }

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "terranova:block/wide_cherry_trunk"
+    },
+    "type=double": {
+      "model": "minecraft:block/cherry_log"
+    },
+    "type=top": {
+      "model": "terranova:block/wide_cherry_trunk_top"
+    }
+  }
+}

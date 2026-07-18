@@ -1,6 +1,13 @@
 {
   "values": [
     "terranova:test_fence_gate",
-    "terranova:medium_oak_branch"
+    "terranova:medium_oak_branch",
+    "terranova:medium_birch_branch",
+    "terranova:medium_spruce_branch",
+    "terranova:medium_jungle_branch",
+    "terranova:medium_acacia_branch",
+    "terranova:medium_dark_oak_branch",
+    "terranova:medium_mangrove_branch",
+    "terranova:medium_cherry_branch"
   ]
 }

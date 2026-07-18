@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "terranova:block/wide_spruce_trunk"
+    },
+    "type=double": {
+      "model": "minecraft:block/spruce_log"
+    },
+    "type=top": {
+      "model": "terranova:block/wide_spruce_trunk_top"
+    }
+  }
+}

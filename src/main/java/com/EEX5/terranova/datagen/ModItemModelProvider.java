@@ -8,7 +8,6 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
-import net.minecraftforge.client.model.generators.ItemModelBuilder;
 import net.minecraftforge.client.model.generators.ItemModelProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -73,20 +72,73 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         //oak
         simpleBlockItem(ModBlocks.THIN_TALL_OAK_BRANCH);
-
         VfenceItem(ModBlocks.TALL_OAK_BRANCH, Blocks.OAK_LOG);
         VwallItem(ModBlocks.THICK_TALL_OAK_BRANCH, Blocks.OAK_LOG);
-
         evenSimplierBlockItem(ModBlocks.OAK_TRUNK);
         evenSimplierBlockItem(ModBlocks.WIDE_OAK_TRUNK);
         evenSimplierBlockItem(ModBlocks.MEDIUM_OAK_BRANCH);
-
         trapdoorItem(ModBlocks.OAK_BRANCH);
+        //birch
+        simpleBlockItem(ModBlocks.THIN_TALL_BIRCH_BRANCH);
+        VfenceItem(ModBlocks.TALL_BIRCH_BRANCH, Blocks.BIRCH_LOG);
+        VwallItem(ModBlocks.THICK_TALL_BIRCH_BRANCH, Blocks.BIRCH_LOG);
+        evenSimplierBlockItem(ModBlocks.BIRCH_TRUNK);
+        evenSimplierBlockItem(ModBlocks.WIDE_BIRCH_TRUNK);
+        evenSimplierBlockItem(ModBlocks.MEDIUM_BIRCH_BRANCH);
+        trapdoorItem(ModBlocks.BIRCH_BRANCH);
+        //spruce
+        simpleBlockItem(ModBlocks.THIN_TALL_SPRUCE_BRANCH);
+        VfenceItem(ModBlocks.TALL_SPRUCE_BRANCH, Blocks.SPRUCE_LOG);
+        VwallItem(ModBlocks.THICK_TALL_SPRUCE_BRANCH, Blocks.SPRUCE_LOG);
+        evenSimplierBlockItem(ModBlocks.SPRUCE_TRUNK);
+        evenSimplierBlockItem(ModBlocks.WIDE_SPRUCE_TRUNK);
+        evenSimplierBlockItem(ModBlocks.MEDIUM_SPRUCE_BRANCH);
+        trapdoorItem(ModBlocks.SPRUCE_BRANCH);
+        //jungle
+        simpleBlockItem(ModBlocks.THIN_TALL_JUNGLE_BRANCH);
+        VfenceItem(ModBlocks.TALL_JUNGLE_BRANCH, Blocks.JUNGLE_LOG);
+        VwallItem(ModBlocks.THICK_TALL_JUNGLE_BRANCH, Blocks.JUNGLE_LOG);
+        evenSimplierBlockItem(ModBlocks.JUNGLE_TRUNK);
+        evenSimplierBlockItem(ModBlocks.WIDE_JUNGLE_TRUNK);
+        evenSimplierBlockItem(ModBlocks.MEDIUM_JUNGLE_BRANCH);
+        trapdoorItem(ModBlocks.JUNGLE_BRANCH);
+        //acacia
+        simpleBlockItem(ModBlocks.THIN_TALL_ACACIA_BRANCH);
+        VfenceItem(ModBlocks.TALL_ACACIA_BRANCH, Blocks.ACACIA_LOG);
+        VwallItem(ModBlocks.THICK_TALL_ACACIA_BRANCH, Blocks.ACACIA_LOG);
+        evenSimplierBlockItem(ModBlocks.ACACIA_TRUNK);
+        evenSimplierBlockItem(ModBlocks.WIDE_ACACIA_TRUNK);
+        evenSimplierBlockItem(ModBlocks.MEDIUM_ACACIA_BRANCH);
+        trapdoorItem(ModBlocks.ACACIA_BRANCH);
+        //dark oak
+        simpleBlockItem(ModBlocks.THIN_TALL_DARK_OAK_BRANCH);
+        VfenceItem(ModBlocks.TALL_DARK_OAK_BRANCH, Blocks.DARK_OAK_LOG);
+        VwallItem(ModBlocks.THICK_TALL_DARK_OAK_BRANCH, Blocks.DARK_OAK_LOG);
+        evenSimplierBlockItem(ModBlocks.DARK_OAK_TRUNK);
+        evenSimplierBlockItem(ModBlocks.WIDE_DARK_OAK_TRUNK);
+        evenSimplierBlockItem(ModBlocks.MEDIUM_DARK_OAK_BRANCH);
+        trapdoorItem(ModBlocks.DARK_OAK_BRANCH);
+        //mangrove
+        simpleBlockItem(ModBlocks.THIN_TALL_MANGROVE_BRANCH);
+        VfenceItem(ModBlocks.TALL_MANGROVE_BRANCH, Blocks.MANGROVE_LOG);
+        VwallItem(ModBlocks.THICK_TALL_MANGROVE_BRANCH, Blocks.MANGROVE_LOG);
+        evenSimplierBlockItem(ModBlocks.MANGROVE_TRUNK);
+        evenSimplierBlockItem(ModBlocks.WIDE_MANGROVE_TRUNK);
+        evenSimplierBlockItem(ModBlocks.MEDIUM_MANGROVE_BRANCH);
+        trapdoorItem(ModBlocks.MANGROVE_BRANCH);
+        //cherry
+        simpleBlockItem(ModBlocks.THIN_TALL_CHERRY_BRANCH);
+        VfenceItem(ModBlocks.TALL_CHERRY_BRANCH, Blocks.CHERRY_LOG);
+        VwallItem(ModBlocks.THICK_TALL_CHERRY_BRANCH, Blocks.CHERRY_LOG);
+        evenSimplierBlockItem(ModBlocks.CHERRY_TRUNK);
+        evenSimplierBlockItem(ModBlocks.WIDE_CHERRY_TRUNK);
+        evenSimplierBlockItem(ModBlocks.MEDIUM_CHERRY_BRANCH);
+        trapdoorItem(ModBlocks.CHERRY_BRANCH);
     }
 
 
-    private ItemModelBuilder simpleItem(RegistryObject<Item> item) {
-        return withExistingParent(item.getId().getPath(),
+    private void simpleItem(RegistryObject<Item> item) {
+        withExistingParent(item.getId().getPath(),
                 ResourceLocation.withDefaultNamespace("item/generated")).texture("layer0",
                 ResourceLocation.fromNamespaceAndPath(Terranova.MOD_ID, "item/" + item.getId().getPath()));
     }
@@ -100,6 +152,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         this.withExistingParent(ForgeRegistries.BLOCKS.getKey(block.get()).getPath(),
                 modLoc("block/" + ForgeRegistries.BLOCKS.getKey(block.get()).getPath() + "_bottom"));
     }
+
 
     public void fenceItem(RegistryObject<Block> block, RegistryObject<Block> baseBlock) {
         this.withExistingParent(ForgeRegistries.BLOCKS.getKey(block.get()).getPath(), mcLoc("block/fence_inventory"))
@@ -126,10 +179,10 @@ public class ModItemModelProvider extends ItemModelProvider {
                 .texture("wall",  ResourceLocation.fromNamespaceAndPath("minecraft", "block/" + ForgeRegistries.BLOCKS.getKey(baseBlock).getPath()));
     }
 
-    private ItemModelBuilder simpleBlockItem(RegistryObject<Block> item) {
-        return withExistingParent(item.getId().getPath(),
+    private void simpleBlockItem(RegistryObject<Block> item) {
+        withExistingParent(item.getId().getPath(),
                 ResourceLocation.withDefaultNamespace("item/generated")).texture("layer0",
-                ResourceLocation.fromNamespaceAndPath(Terranova.MOD_ID,"item/" + item.getId().getPath()));
+                ResourceLocation.fromNamespaceAndPath(Terranova.MOD_ID, "item/" + item.getId().getPath()));
     }
 
 

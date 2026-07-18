@@ -6,6 +6,7 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
@@ -69,6 +70,7 @@ public class ModCreativeModeTabs {
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModBlocks.OAK_TRUNK.get()))
                     .title(Component.translatable("creativetab.wood_blocks"))
                     .displayItems((itemDisplayParameters, output) -> {
+                        /*
                         output.accept(ModBlocks.TEST_BLOCK.get());
                         output.accept(ModBlocks.TEST_STAIRS.get());
                         output.accept(ModBlocks.TEST_SLAB.get());
@@ -80,7 +82,8 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.TEST_PRESSURE_PLATE.get());
                         output.accept(ModBlocks.TEST_TRAP_DOOR.get());
                         output.accept(ModBlocks.TEST_DOOR.get());
-
+                         */
+                        //oak
                         output.accept(ModBlocks.OAK_TRUNK.get());
                         output.accept(ModBlocks.WIDE_OAK_TRUNK.get());
                         output.accept(ModBlocks.THICK_TALL_OAK_BRANCH.get());
@@ -88,6 +91,78 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.THIN_TALL_OAK_BRANCH.get());
                         output.accept(ModBlocks.MEDIUM_OAK_BRANCH.get());
                         output.accept(ModBlocks.OAK_BRANCH.get());
+                        output.accept(Blocks.OAK_LOG);
+                        output.accept(Blocks.OAK_WOOD);
+                        //birch
+                        output.accept(ModBlocks.BIRCH_TRUNK.get());
+                        output.accept(ModBlocks.WIDE_BIRCH_TRUNK.get());
+                        output.accept(ModBlocks.THICK_TALL_BIRCH_BRANCH.get());
+                        output.accept(ModBlocks.TALL_BIRCH_BRANCH.get());
+                        output.accept(ModBlocks.THIN_TALL_BIRCH_BRANCH.get());
+                        output.accept(ModBlocks.MEDIUM_BIRCH_BRANCH.get());
+                        output.accept(ModBlocks.BIRCH_BRANCH.get());
+                        output.accept(Blocks.BIRCH_LOG);
+                        output.accept(Blocks.BIRCH_WOOD);
+                        //spruce
+                        output.accept(ModBlocks.SPRUCE_TRUNK.get());
+                        output.accept(ModBlocks.WIDE_SPRUCE_TRUNK.get());
+                        output.accept(ModBlocks.THICK_TALL_SPRUCE_BRANCH.get());
+                        output.accept(ModBlocks.TALL_SPRUCE_BRANCH.get());
+                        output.accept(ModBlocks.THIN_TALL_SPRUCE_BRANCH.get());
+                        output.accept(ModBlocks.MEDIUM_SPRUCE_BRANCH.get());
+                        output.accept(ModBlocks.SPRUCE_BRANCH.get());
+                        output.accept(Blocks.SPRUCE_LOG);
+                        output.accept(Blocks.SPRUCE_WOOD);
+                        //jungle
+                        output.accept(ModBlocks.JUNGLE_TRUNK.get());
+                        output.accept(ModBlocks.WIDE_JUNGLE_TRUNK.get());
+                        output.accept(ModBlocks.THICK_TALL_JUNGLE_BRANCH.get());
+                        output.accept(ModBlocks.TALL_JUNGLE_BRANCH.get());
+                        output.accept(ModBlocks.THIN_TALL_JUNGLE_BRANCH.get());
+                        output.accept(ModBlocks.MEDIUM_JUNGLE_BRANCH.get());
+                        output.accept(ModBlocks.JUNGLE_BRANCH.get());
+                        output.accept(Blocks.JUNGLE_LOG);
+                        output.accept(Blocks.JUNGLE_WOOD);
+                        //acacia
+                        output.accept(ModBlocks.ACACIA_TRUNK.get());
+                        output.accept(ModBlocks.WIDE_ACACIA_TRUNK.get());
+                        output.accept(ModBlocks.THICK_TALL_ACACIA_BRANCH.get());
+                        output.accept(ModBlocks.TALL_ACACIA_BRANCH.get());
+                        output.accept(ModBlocks.THIN_TALL_ACACIA_BRANCH.get());
+                        output.accept(ModBlocks.MEDIUM_ACACIA_BRANCH.get());
+                        output.accept(ModBlocks.ACACIA_BRANCH.get());
+                        output.accept(Blocks.ACACIA_LOG);
+                        output.accept(Blocks.ACACIA_WOOD);
+                        //dark oak
+                        output.accept(ModBlocks.DARK_OAK_TRUNK.get());
+                        output.accept(ModBlocks.WIDE_DARK_OAK_TRUNK.get());
+                        output.accept(ModBlocks.THICK_TALL_DARK_OAK_BRANCH.get());
+                        output.accept(ModBlocks.TALL_DARK_OAK_BRANCH.get());
+                        output.accept(ModBlocks.THIN_TALL_DARK_OAK_BRANCH.get());
+                        output.accept(ModBlocks.MEDIUM_DARK_OAK_BRANCH.get());
+                        output.accept(ModBlocks.DARK_OAK_BRANCH.get());
+                        output.accept(Blocks.DARK_OAK_LOG);
+                        output.accept(Blocks.DARK_OAK_WOOD);
+                        //mangrove
+                        output.accept(ModBlocks.MANGROVE_TRUNK.get());
+                        output.accept(ModBlocks.WIDE_MANGROVE_TRUNK.get());
+                        output.accept(ModBlocks.THICK_TALL_MANGROVE_BRANCH.get());
+                        output.accept(ModBlocks.TALL_MANGROVE_BRANCH.get());
+                        output.accept(ModBlocks.THIN_TALL_MANGROVE_BRANCH.get());
+                        output.accept(ModBlocks.MEDIUM_MANGROVE_BRANCH.get());
+                        output.accept(ModBlocks.MANGROVE_BRANCH.get());
+                        output.accept(Blocks.MANGROVE_LOG);
+                        output.accept(Blocks.MANGROVE_WOOD);
+                        //cherry
+                        output.accept(ModBlocks.CHERRY_TRUNK.get());
+                        output.accept(ModBlocks.WIDE_CHERRY_TRUNK.get());
+                        output.accept(ModBlocks.THICK_TALL_CHERRY_BRANCH.get());
+                        output.accept(ModBlocks.TALL_CHERRY_BRANCH.get());
+                        output.accept(ModBlocks.THIN_TALL_CHERRY_BRANCH.get());
+                        output.accept(ModBlocks.MEDIUM_CHERRY_BRANCH.get());
+                        output.accept(ModBlocks.CHERRY_BRANCH.get());
+                        output.accept(Blocks.CHERRY_LOG);
+                        output.accept(Blocks.CHERRY_WOOD);
                     })
                     .build());
 
